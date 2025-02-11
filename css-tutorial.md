@@ -389,9 +389,124 @@ background-size: cover;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ดที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/products/AIR+ZOOM+PEGASUS+41.png');"></div>
+            <div class="product-info">
+                <h2 class="product-title">Nike Pegasus 41 (ของผู้ชาย)</h2>
+                <p class="product-price">฿1,999</p>
+                <p class="product-description">รองเท้าเท่แบบผู้ชาย</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/products/NIKE+PEGASUS+PREMIUM.png');"></div>
+            <div class="product-info">
+                <h2 class="product-title">Nike Pegasus Premium</h2>
+                <p class="product-price">฿2,500</p>
+                <p class="product-description">รองเท้าเท่ในวันสบายๆ</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/products/W+AIR+ZOOM+PEGASUS+41.png');"></div>
+            <div class="product-info">
+                <h2 class="product-title">Nike Pegasus 41 (ของผู้หญิง)</h2>
+                <p class="product-price">฿1,750</p>
+                <p class="product-description">รองเท้าสวยแบบผู้หญิง</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/products/W+PEGASUS+PLUS.png');"></div>
+            <div class="product-info">
+                <h2 class="product-title">Nike Pegasus Plus</h2>
+                <p class="product-price">฿2,200</p>
+                <p class="product-description">รองเท้าดูดีในวันหยุด</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 ```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+``` css
+.product-card {
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: white;
+    margin: 15px;
+    display: inline-block;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-title {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: #007bff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.product-button {
+    display: block;
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.product-button:hover {
+    background: linear-gradient(to right, #0056b3, #003980);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+``` 
+
+![image](https://github.com/user-attachments/assets/fe0696f6-7d35-41d9-b54e-6388bfe4dabf)
+
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
